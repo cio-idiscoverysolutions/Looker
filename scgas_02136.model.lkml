@@ -29,6 +29,12 @@ explore: udf {
     view_label: "People "
 
   }
+  join:physical_injury_analysis  {
+    type: left_outer
+    sql_on: ${ppl.ppl_id} = ${physical_injury_analysis.ppl_id} ;;
+    relationship: one_to_one
+    view_label: "People"
+  }
   join: obj{
     type: left_outer
     sql_on: ${udf.obj_id} = ${obj.obj_id} ;;
