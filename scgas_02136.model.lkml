@@ -10,6 +10,20 @@ explore: primary_audit {}
 
 explore: relationship {}
 
+# Add Views as Standalone so visible in Explore
+explore: CDA001 {
+  from: vw_cda001
+}
+explore: CDA002 {
+  from: vw_cda002
+}
+explore: CDA003 {
+  from: vw_cda003
+}
+explore: CDA005 {
+  from: vw_cda005
+}
+
 explore: script {
   join: users {
     type: left_outer
