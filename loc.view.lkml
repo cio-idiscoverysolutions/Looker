@@ -64,6 +64,7 @@ view: loc {
 
   dimension: name {
     type: string
+    label: "Location Type"
     sql: ${TABLE}.NAME ;;
   }
 
