@@ -10,7 +10,11 @@ view: vw_cda003 {
     type: number
     sql: ${TABLE}.GPS_LONG ;;
   }
-
+  dimension: gps_location {
+    type: location
+    sql_latitude: ${TABLE}.gps_lat ;;
+    sql_longitude: ${TABLE}.gps_long ;;
+  }
   dimension: label {
     type: string
     sql: ${TABLE}.Label ;;
