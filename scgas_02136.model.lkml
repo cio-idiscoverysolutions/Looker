@@ -102,3 +102,4 @@ explore: udf {
   }
 
 }
+explore: location_details {}

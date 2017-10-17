@@ -93,6 +93,11 @@ view: attribute {
   dimension: numeric_value {
     type: number
     sql: ${TABLE}.NUMERIC_VALUE ;;
+    link: {
+      label: "Location Details"
+      url: "/looks/74?Locationid%20Filter={{ loc.loc_id._value | encode_uri }}"
+      icon_url: "http://www.looker.com/favicon.ico"
+    }
   }
 
   dimension: obj_id {

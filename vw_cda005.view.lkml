@@ -10,7 +10,11 @@ view: vw_cda005 {
     type: number
     sql: ${TABLE}.PPL_ID ;;
   }
-
+  dimension: Loc_Attribute_Name {
+    label: "Location"
+    type: string
+    sql: ${TABLE}.loc_attribute_name ;;
+  }
   measure: count {
     type: count
     drill_fields: []
