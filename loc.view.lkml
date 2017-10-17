@@ -60,11 +60,11 @@ view: loc {
     sql_latitude: ${TABLE}.gps_lat ;;
     sql_longitude: ${TABLE}.gps_long ;;
    # drill_fields: [ppl.ppl_id,ppl.full_name]
-    link: {
-      label: "Location Details"
-      url: "/looks/74?LocationID%20Filter={{ loc.loc_id | encode_uri }}"
-      icon_url: "http://www.looker.com/favicon.ico"
-    }
+#     link: {
+#       label: "Location Details"
+#       url: "/looks/74?LocationID%20Filter={{ loc.loc_id | encode_uri }}"
+#       icon_url: "http://www.looker.com/favicon.ico"
+#     }
 
   }
 
