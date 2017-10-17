@@ -33,7 +33,7 @@ view: vw_cda003 {
   dimension: Loc_Attribute_Numeric_Value {
     label: "Attribute"
     type: string
-    sql: ${TABLE}.[loc_attribute_numeric_value] ;;
+    sql: ${TABLE}.[loc attribute numeric value] ;;
   }
   measure: count {
     type: count
