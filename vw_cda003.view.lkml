@@ -28,12 +28,12 @@ view: vw_cda003 {
   dimension: Loc_Attribute_Name {
     label: "Location"
     type: string
-    sql: ${TABLE}.loc_attribute_name ;;
+    sql: ${TABLE}.[Loc Attribute Name] ;;
   }
   dimension: Loc_Attribute_Numeric_Value {
     label: "Attribute"
     type: string
-    sql: ${TABLE}.loc_attribute_numeric_value ;;
+    sql: ${TABLE}.[loc_attribute_numeric_value] ;;
   }
   measure: count {
     type: count
