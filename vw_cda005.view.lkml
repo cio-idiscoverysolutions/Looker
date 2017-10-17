@@ -15,6 +15,11 @@ view: vw_cda005 {
     type: string
     sql: ${TABLE}.loc_attribute_name ;;
   }
+  dimension: Loc_Attribute_Numeric_Value {
+    label: "Attribute"
+    type: string
+    sql: ${TABLE}.loc_attribute_numeric_value ;;
+  }
   measure: count {
     type: count
     drill_fields: []
