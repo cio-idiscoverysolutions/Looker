@@ -35,6 +35,9 @@ explore: CDA007 {
 explore: CDA008 {
   from: vw_cda008
 }
+explore: CDA009 {
+  from: vw_cda009
+}
 
 explore: script {
   join: users {
