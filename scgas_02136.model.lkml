@@ -20,8 +20,20 @@ explore: CDA002 {
 explore: CDA003 {
   from: vw_cda003
 }
+explore: CDA004 {
+  from: vw_cda005
+}
 explore: CDA005 {
   from: vw_cda005
+}
+explore: CDA006 {
+  from: vw_cda006
+}
+explore: CDA007 {
+  from: vw_cda007
+}
+explore: CDA008 {
+  from: vw_cda008
 }
 
 explore: script {
