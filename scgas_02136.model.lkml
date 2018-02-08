@@ -39,6 +39,10 @@ explore: CDA009 {
   from: vw_cda009
 }
 
+explore: law_firm_profile {
+  from: vw_law_firm_profile
+}
+
 explore: script {
   join: users {
     type: left_outer
