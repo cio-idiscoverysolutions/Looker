@@ -16,6 +16,7 @@ view: vw_plaintiff_count_by_address {
     sql_longitude: ${TABLE}.gps_long ;;
   }
   dimension: Plaintiffs {
+    label: "# of Plaintiffs"
     type: number
     sql: ${TABLE}.Plaintiffs ;;
   }

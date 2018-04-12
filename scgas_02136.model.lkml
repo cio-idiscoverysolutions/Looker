@@ -35,14 +35,12 @@ explore: CDA007 {
 explore: CDA008 {
   from: vw_cda008
 }
-explore: CDA009 {
-  from: vw_cda009
-}
-explore: law_firm_profile {
-  from: vw_law_firm_profile
-}
-
-
+#explore: CDA009 {
+#  from: vw_cda009
+#}
+#explore: law_firm_profile {
+#  from: vw_law_firm_profile
+#}
 
 explore: plaintiff_count_by_address {
   from: vw_plaintiff_count_by_address
