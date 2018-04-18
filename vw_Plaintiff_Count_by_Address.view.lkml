@@ -1,9 +1,9 @@
 view: vw_plaintiff_count_by_address {
   sql_table_name: dbo.vw_plaintiff_count_by_address ;;
 
-  dimension: address {
+  dimension: PlaintiffAddress {
     type: string
-    sql: ${TABLE}.Address ;;
+    sql: ${TABLE}.PlaintiffAddress ;;
   }
   dimension: gps_lat {
     type: number
