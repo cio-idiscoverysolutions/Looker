@@ -8,7 +8,6 @@ view: vw_plaintiff_count_by_address_details {
   dimension: gps_lat {
     type: number
     sql: ${TABLE}.GPS_LAT ;;
-    html:  <a href="https://idssda.looker.com/dashboards/43?Plaintiff%20No.:={{gps_lat._value | encode_url }}" target="_blank">{{value}} ;;
   }
 
   dimension: gps_long {
@@ -19,6 +18,11 @@ view: vw_plaintiff_count_by_address_details {
     type: location
     sql_latitude: ${TABLE}.gps_lat ;;
     sql_longitude: ${TABLE}.gps_long ;;
+  }
+  dimension: FullName {
+    label: "Full Name"
+    type: string
+    sql: ${TABLE}.Full Name ;;
   }
   dimension: Plaintiffs {
     label: "Plaintiff No."
