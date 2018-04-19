@@ -1,5 +1,5 @@
 view: vw_plaintiff_count_by_address {
-  sql_table_name: dbo.vw_plaintiff_count_by_address ;;
+  sql_table_name: dbo.vw_Plaintiff_Count_by_Address ;;
 
   dimension: PlaintiffAddress {
     type: string
@@ -23,47 +23,47 @@ view: vw_plaintiff_count_by_address {
   dimension: Plaintiffs {
     label: "No. Plaintiff(s)"
     type: number
-    sql: ${TABLE}.Plaintiff Count ;;
+    sql: ${TABLE}.PlaintiffCount ;;
     # html:  <a href="https://idssda.looker.com/dashboards/43?Plaintiff%20No.:={{gps_lat._value | encode_url }}" target="_blank">{{value}} ;;
   }
   dimension: AcuteClaims {
     label: "Acute Claims"
     type: number
-    sql: ${TABLE}.Acute Count ;;
+    sql: ${TABLE}.AcuteCount ;;
   }
   dimension: ChronicClaims {
     label: "Chronic Claims"
     type: number
-    sql: ${TABLE}.Chronic Count ;;
+    sql: ${TABLE}.ChronicCount ;;
   }
   dimension: MedicalClaims {
     label: "Medical Monitoring Claims"
     type: number
-    sql: ${TABLE}.Medical Monitoring Count ;;
+    sql: ${TABLE}.MedicalMonitoringCount ;;
   }
   dimension: WrongfulDeathClaims {
     label: "Wrongful Death Claims"
     type: number
-    sql: ${TABLE}.Wrongful Death Count ;;
+    sql: ${TABLE}.WrongfulDeathCount ;;
   }
   dimension: PropertyDamageClaims {
     label: "Property Damage Claims"
     type: number
-    sql: ${TABLE}.Property Damage Count ;;
+    sql: ${TABLE}.PropertyDamageCount ;;
   }
   dimension: PropertValueClaims {
     label: "Property Value Claims"
     type: number
-    sql: ${TABLE}.Property Value Count ;;
+    sql: ${TABLE}.PropertyValueCount ;;
   }
   dimension: RelocationClaims {
     label: "Relocation Claims"
     type: number
-    sql: ${TABLE}.Relocation Count ;;
+    sql: ${TABLE}.RelocationCount ;;
   }
   dimension: LossWagesClaims {
     label: "Loss Wages Claims"
     type: number
-    sql: ${TABLE}.Loss Wages Count ;;
+    sql: ${TABLE}.LossWagesCount ;;
   }
 }
