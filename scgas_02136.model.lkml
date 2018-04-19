@@ -45,6 +45,9 @@ explore: CDA008 {
 explore: plaintiff_count_by_address {
   from: vw_plaintiff_count_by_address
   }
+explore: vw_plaintiff_count_by_address_details {
+  from: vw_plaintiff_count_by_address_details
+  }
 
 explore: script {
   join: users {
