@@ -20,18 +20,18 @@ view: vw_plaintiff_count_by_address_details {
     sql_longitude: ${TABLE}.gps_long ;;
   }
   dimension: FullName {
-    label: "Full Name"
+    label: "Full_Name"
     type: string
-    sql: ${TABLE}.Full Name ;;
+    sql: ${TABLE}.Full_Name ;;
   }
   dimension: Plaintiffs {
-    label: "Plaintiff No."
+    label: "Plaintiff_No"
     type: number
     sql: ${TABLE}.Plaintiff No. ;;
     # html:  <a href="https://idssda.looker.com/dashboards/43?Plaintiff%20No.:={{gps_lat._value | encode_url }}" target="_blank">{{value}} ;;
   }
   dimension: QuestionID {
-    label: "Question No."
+    label: "Question_No"
     type: string
     sql: ${TABLE}.QuestionID ;;
   }
@@ -41,7 +41,7 @@ view: vw_plaintiff_count_by_address_details {
     sql: ${TABLE}.Answer ;;
   }
   dimension: ClaimType {
-    label: "Clainm Type"
+    label: "Claim_Type"
     type: string
     sql: ${TABLE}.ClaimType ;;
   }
