@@ -5,7 +5,7 @@ view: vw_plaintiff_count_by_address {
     type: string
     sql: ${TABLE}.PlaintiffAddress ;;
     #html:  <a href="https://idssda.looker.com/dashboards/85?gps_location='{{gps_location._value | encode_url }}'" target="_new">{{value}} ;;
-    html:  <a href="https://idssda.looker.com/dashboards/85?gps_lat={{gps_lat._value | encode_url }}" target="_new">{{value}} ;;
+    html:  <a href="https://idssda.looker.com/dashboards/85?gps_lat={{gps_lat._value | encode_url }}&gps_long={{gps_long._value | encode_url }}" target="_new">{{value}} ;;
   }
 
   dimension: City {
