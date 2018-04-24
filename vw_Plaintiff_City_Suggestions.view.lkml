@@ -3,8 +3,7 @@ view: vw_Plaintiff_City_Suggestions {
   derived_table: {
     sql:
       Select Distinct City 'CitySuggestion' from [dbo].[vw_Plaintiff_Count_by_Address]
-          group by City
-          Order by City ;;
+          group by City ;;
   }
   dimension: CitySuggestion {
     type: string
