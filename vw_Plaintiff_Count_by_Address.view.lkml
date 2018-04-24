@@ -11,8 +11,14 @@ view: vw_plaintiff_count_by_address {
   dimension: City {
     type: string
     sql: ${TABLE}.City ;;
-    suggest_persist_for: "1 minute"
+     # suggest_persist_for: "1 minute"
+   }
+
+  dimension: CitySuggestion {
+    sql: ${TABLE}.vw_Plaintiff_City_Suggestions ;;
+    suggest_dimension: City
   }
+
   dimension: gps_lat {
     type: number
     sql: ${TABLE}.GPS_LAT ;;
