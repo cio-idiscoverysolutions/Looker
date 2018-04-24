@@ -42,13 +42,16 @@ explore: CDA008 {
 #  from: vw_law_firm_profile
 #}
 
+#These views used for Interactive Map
 explore: plaintiff_count_by_address {
   from: vw_plaintiff_count_by_address
   }
 explore: plaintiff_count_by_address_details {
   from: vw_plaintiff_count_by_address_details
   }
-
+explore: vw_Plaintiff_City_Suggestions {
+  from: vw_Plaintiff_City_Suggestions
+}
 explore: script {
   join: users {
     type: left_outer
