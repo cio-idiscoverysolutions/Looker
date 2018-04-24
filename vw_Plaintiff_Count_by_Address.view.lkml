@@ -16,7 +16,7 @@ view: vw_plaintiff_count_by_address {
 
   dimension: CitySuggestion {
     sql: ${TABLE}.vw_Plaintiff_City_Suggestions ;;
-    suggest_dimension: City
+    suggest_dimension: CitySuggestion
   }
 
   dimension: gps_lat {
