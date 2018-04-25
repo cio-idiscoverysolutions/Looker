@@ -33,16 +33,46 @@ view: vw_plaintiff_count_by_address_pivot  {
   dimension: AcuteClaim{
     label: "Acute Claim"
     type: string
-    sql: ${TABLE}.Acute Claim ;;
+    sql: ${TABLE}.AcuteClaim ;;
   }
   dimension: ChronicClaim{
     label: "Chronc Claim"
     type: string
-    sql: ${TABLE}.Chronic Claim ;;
+    sql: ${TABLE}.ChronicClaim ;;
   }
   dimension: ChronicClaimDescription{
     label: "Chronc Claim Description"
     type: string
-    sql: ${TABLE}.Chronic Claim Description;;
+    sql: ${TABLE}.ChronicClaimDescription;;
+  }
+  dimension: MedicalMonitoringClaim{
+    label: "Medica Monitoring Claim"
+    type: string
+    sql: ${TABLE}.MedicalMonitoringClaim;;
+  }
+  dimension: WrongfulDeathClaim{
+    label: "Wrongful Death Claim"
+    type: string
+    sql: ${TABLE}.WrongfulDeathClaim;;
+  }
+  dimension: PropertyDamageClaim{
+    label: "Property Damage Claim"
+    type: string
+    sql: ${TABLE}.PropertyDamageClaim;;
+  }
+  dimension: PropertyValueClaim{
+    label: "Property Value Claim"
+    type: string
+    sql: ${TABLE}.PropertyValueClaim;;
+  }
+  dimension: RelocationClaim{
+    label: "Relocation Claim"
+    type: string
+    sql: ${TABLE}.RelocationClaim;;
+  }
+  dimension: LossofWagesClaim{
+    label: "Loss of Wages Claim"
+    type: string
+    sql: ${TABLE}.LossofWagesClaim;;
   }
 }
