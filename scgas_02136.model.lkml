@@ -52,6 +52,11 @@ explore: plaintiff_count_by_address_details {
 explore: vw_Plaintiff_City_Suggestions {
   from: vw_Plaintiff_City_Suggestions
 }
+explore: vw_plaintiff_count_by_address_pivot  {
+  from: vw_plaintiff_count_by_address_pivot
+}
+
+
 explore: script {
   join: users {
     type: left_outer
