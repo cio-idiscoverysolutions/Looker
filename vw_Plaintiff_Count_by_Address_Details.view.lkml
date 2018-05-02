@@ -26,7 +26,7 @@ view: vw_plaintiff_count_by_address_details {
   }
   dimension: PlaintiffNum {
     label: "PlaintiffNum"
-    type: number
+    type: string
     sql: ${TABLE}.PlaintiffNum ;;
     # html:  <a href="https://idssda.looker.com/dashboards/43?Plaintiff%20No.:={{gps_lat._value | encode_url }}" target="_blank">{{value}} ;;
   }
