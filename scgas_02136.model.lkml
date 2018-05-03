@@ -38,9 +38,9 @@ explore: CDA008 {
 #explore: CDA009 {
 #  from: vw_cda009
 #}
-#explore: law_firm_profile {
-#  from: vw_law_firm_profile
-#}
+explore: law_firm_profile {
+  from: vw_law_firm_profile
+}
 
 #These views used for Interactive Map
 explore: plaintiff_count_by_address {
