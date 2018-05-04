@@ -84,4 +84,12 @@ view: vw_plaintiff_count_by_address {
     type: number
     sql: ${TABLE}.LossWagesCount ;;
   }
+  measure: Plaintiffs_Represented {
+    sql: ${TABLE}.PlaintiffCount ;;
+    type: sum
+  }
+  measure: Address_Plotted {
+    sql: ${TABLE}.PlaintiffAddress ;;
+    type: count_distinct
+  }
 }
