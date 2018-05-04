@@ -1,6 +1,11 @@
 view: vw_plaintiff_count_by_address {
   sql_table_name: dbo.vw_Plaintiff_Count_by_Address ;;
 
+  dimension: id {
+  primary_key: yes
+  sql: ${TABLE}.loc_id ;;
+  }
+
   dimension: PlaintiffAddress {
     type: string
     sql: ${TABLE}.PlaintiffAddress ;;
