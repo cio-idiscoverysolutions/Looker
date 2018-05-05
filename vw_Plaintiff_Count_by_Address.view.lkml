@@ -96,6 +96,7 @@ view: vw_plaintiff_count_by_address {
   dimension: DistanceInMiles {
     label: "Distance In Miles"
     type: number
+    value_format: "0.00"
     sql: ${TABLE}.DistanceInMiles ;;
   }
 
