@@ -75,14 +75,14 @@ view: vw_plaintiff_count_by_address_pivot  {
     type: string
     sql: ${TABLE}.LossofWagesClaim;;
   }
-  #dimension: Zone {
-  #  type: string
-  #  sql: ${TABLE}.Zone ;;
-  #}
-  #dimension: DistanceInMiles {
-  #  label: "Distance In Miles"
-  #  type: number
-  #  value_format: "0.00"
-  #  sql: ${TABLE}.DistanceInMiles ;;
-  #}
+  dimension: Zone {
+    type: string
+    sql: ${TABLE}.Zone ;;
+  }
+  dimension: DistanceInMiles {
+    label: "Distance In Miles"
+    type: number
+    value_format: "0.00"
+    sql: ${TABLE}.DistanceInMiles ;;
+  }
 }
