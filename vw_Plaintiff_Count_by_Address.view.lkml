@@ -89,6 +89,16 @@ view: vw_plaintiff_count_by_address {
     type: number
     sql: ${TABLE}.LossWagesCount ;;
   }
+  dimension: Zone {
+    type: string
+    sql: ${TABLE}.Zone ;;
+  }
+  dimension: DistanceInMiles {
+    label: "Distance In Miles"
+    type: number
+    sql: ${TABLE}.DistanceInMiles ;;
+  }
+
   measure: Plaintiffs_Represented {
     label: "Plaintiffs Represented"
     sql: ${TABLE}.PlaintiffCount ;;
