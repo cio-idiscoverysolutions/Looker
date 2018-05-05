@@ -124,5 +124,6 @@ view: vw_plaintiff_count_by_address {
     label: "AverageDistance"
     sql: ${TABLE}.DistanceInMiles ;;
     type: average
+    value_format: "0.00"
   }
 }
