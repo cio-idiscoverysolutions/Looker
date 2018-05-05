@@ -54,6 +54,12 @@ explore: vw_Plaintiff_City_Suggestions {
 }
 explore: vw_plaintiff_count_by_address_pivot  {
   from: vw_plaintiff_count_by_address_pivot
+  #Join to get zone and distance
+  join: vw_plaintiff_count_by_address {
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${vw_plaintiff_count_by_address_pivot.PlaintiffNum} = ${vw_plaintiff_count_by_address_pivot.PlaintiffNum} ;;
+  }
 }
 
 
