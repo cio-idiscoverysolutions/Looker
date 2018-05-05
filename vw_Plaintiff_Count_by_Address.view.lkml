@@ -110,4 +110,9 @@ view: vw_plaintiff_count_by_address {
     sql: ${TABLE}.PlaintiffAddress ;;
     type: count_distinct
   }
+  measure: AverageDistance {
+    label: "AverageDistance"
+    sql: ${TABLE}.DistanceInMiles ;;
+    type: average
+  }
 }
