@@ -75,6 +75,55 @@ view: vw_plaintiff_count_by_address_pivot  {
     type: string
     sql: ${TABLE}.LossofWagesClaim;;
   }
+
+  dimension: CurrentResidence{
+    label: "Current Residence"
+    type: string
+    sql: ${TABLE}.CurrentResidence;;
+  }
+
+  dimension: PreviousResidence{
+    label: "Previous Residence"
+    type: string
+    sql: ${TABLE}.PreviousResidence;;
+  }
+
+  dimension: ExposureAddress{
+    label: "Exposure Address"
+    type: string
+    sql: ${TABLE}.ExposureAddress;;
+  }
+
+  dimension: RelocationFromAddress{
+    label: "Relocation From Address"
+    type: string
+    sql: ${TABLE}.RelocationFromAddress;;
+  }
+
+  dimension: RelocationToAddress{
+    label: "Relocation To Address"
+    type: string
+    sql: ${TABLE}.RelocationToAddress;;
+  }
+
+  dimension: DamagedAddress{
+    label: "Damaged Address"
+    type: string
+    sql: ${TABLE}.DamagedAddress;;
+  }
+
+  dimension: SourceOfIncomeAddress{
+    label: "Source Of Income Address"
+    type: string
+    sql: ${TABLE}.SourceOfIncomeAddress;;
+  }
+
+  dimension: EmploymentAddress{
+    label: "Employment Address"
+    type: string
+    sql: ${TABLE}.EmploymentAddress;;
+  }
+
   dimension: Zone {
     type: string
     sql: ${TABLE}.Zone ;;
