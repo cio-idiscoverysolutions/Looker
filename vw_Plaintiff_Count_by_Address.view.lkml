@@ -20,6 +20,19 @@ view: vw_plaintiff_count_by_address {
      # suggest_persist_for: "1 minute"
    }
 
+  dimension: Street_Name {
+    type: string
+    sql: ${TABLE}.Street_Name ;;
+    # suggest_persist_for: "1 minute"
+  }
+
+  dimension: Zip {
+    type: string
+    sql: ${TABLE}.Zip ;;
+    # suggest_persist_for: "1 minute"
+  }
+
+
   dimension: CitySuggestion {
     sql: ${TABLE}.vw_Plaintiff_City_Suggestions ;;
     suggest_dimension: CitySuggestion
