@@ -134,4 +134,10 @@ view: vw_plaintiff_count_by_address_pivot  {
     value_format: "0.00"
     sql: ${TABLE}.DistanceInMiles ;;
   }
+
+  measure: count {
+    type: count
+    drill_fields: [PlaintiffAddress,DistanceInMiles,PlaintiffNum,FullName,AcuteClaim,ChronicClaim,ChronicClaimDescription,MedicalMonitoringClaim,WrongfulDeathClaim,PropertyDamageClaim,PropertyValueClaim,RelocationClaim,LossofWagesClaim,CurrentResidence,PreviousResidence,ExposureAddress,RelocationFromAddress,RelocationToAddress,DamagedAddress,SourceOfIncomeAddress,EmploymentAddress]
+  }
+
 }
