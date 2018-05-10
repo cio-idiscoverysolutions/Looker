@@ -144,6 +144,11 @@ view: vw_plaintiff_count_by_address {
     sql: ${TABLE}.PlaintiffAddress ;;
     type: count_distinct
   }
+  measure: Location_Plotted {
+    label: "Location_Plotted"
+    sql:  ${TABLE}.gps_location ;;
+    type:  count_distinct
+  }
   measure: AverageDistance {
     label: "AverageDistance"
     sql: ${TABLE}.DistanceInMiles ;;
