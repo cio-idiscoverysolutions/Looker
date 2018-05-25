@@ -2,6 +2,7 @@ view: vw_plaintiff_count_by_address_details {
   sql_table_name: dbo.vw_plaintiff_count_by_address_details ;;
 
   dimension: PlaintiffAddress {
+    label:  "Plaintiff Address"
     type: string
     sql: ${TABLE}.PlaintiffAddress ;;
   }
@@ -20,17 +21,18 @@ view: vw_plaintiff_count_by_address_details {
     sql_longitude: ${TABLE}.gps_long ;;
   }
   dimension: FullName {
-    label: "FullName"
+    label: "Full Name"
     type: string
     sql: ${TABLE}.FullName ;;
   }
   dimension: PlaintiffNum {
     type: string
+    label:  "Plaintiff Number"
     sql: ${TABLE}.PlaintiffNum ;;
     html:  <a href="https://idssda.looker.com/dashboards/43?Plaintiff%20No.:={{PlaintiffNum._value | encode_url }}" target="_blank">{{value}} ;;
   }
   dimension: QuestionID {
-    label: "Question_No"
+    label: "Question No"
     type: string
     sql: ${TABLE}.QuestionID ;;
   }
@@ -40,7 +42,7 @@ view: vw_plaintiff_count_by_address_details {
     sql: ${TABLE}.Answer ;;
   }
   dimension: ClaimType {
-    label: "Claim_Type"
+    label: "Claim Type"
     type: string
     sql: ${TABLE}.ClaimType ;;
   }

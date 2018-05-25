@@ -8,6 +8,7 @@ view: vw_plaintiff_count_by_address {
 
   dimension: PlaintiffAddress {
     type: string
+    label:  "Plaintiff Address"
     sql: ${TABLE}.PlaintiffAddress ;;
     #html:  <a href="https://idssda.looker.com/dashboards/85?gps_location='{{gps_location._value | encode_url }}'" target="_new">{{value}} ;;
     html:  <a href="https://idssda.looker.com/dashboards/101?gps_lat={{gps_lat._value | encode_url }}&gps_long={{gps_long._value | encode_url }}" target="_new">{{value}} ;;
@@ -33,12 +34,14 @@ view: vw_plaintiff_count_by_address {
   }
 
   dimension: PlaintiffNumbers {
+    label:  "Plaintiff Numbers"
     type: string
     sql: ${TABLE}.PlaintiffNumbers ;;
     # suggest_persist_for: "1 minute"
   }
 
   dimension: PlaintiffNames {
+    label:  "Plaintiff Names"
     type: string
     sql: ${TABLE}.PlaintiffNames ;;
     # suggest_persist_for: "1 minute"
@@ -140,17 +143,17 @@ view: vw_plaintiff_count_by_address {
     type: sum
   }
   measure: Address_Plotted {
-    label: "Address_Plotted"
+    label: "Address Plotted"
     sql: ${TABLE}.PlaintiffAddress ;;
     type: count_distinct
   }
   measure: Location_Plotted {
-    label: "Location_Plotted"
+    label: "Location Plotted"
     sql:  ${TABLE}.gps_location ;;
     type:  count_distinct
   }
   measure: AverageDistance {
-    label: "AverageDistance"
+    label: "Average Distance"
     sql: ${TABLE}.DistanceInMiles ;;
     type: average
     value_format: "0.00"
