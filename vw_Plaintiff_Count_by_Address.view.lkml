@@ -116,6 +116,21 @@ view: vw_plaintiff_count_by_address {
     type: number
     sql: ${TABLE}.LossWagesCount ;;
   }
+
+  dimension: PhysicalInjuryClaims {
+    label:  "Physical Injury Claims"
+    type:  number
+    sql: ${TABLE}.PhysicalInjuryCount ;;
+  }
+
+  dimension: EmotionalClaims {
+    label:  "Mental or Emotional Injury Claims"
+    type:  number
+    sql: ${TABLE}.EmotionalCount ;;
+  }
+
+
+
   dimension: Zone {
     type: string
     sql: ${TABLE}.Zone ;;
