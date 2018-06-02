@@ -11,7 +11,7 @@ view: vw_plaintiff_count_by_address {
     label:  "Plaintiff Address"
     sql: ${TABLE}.PlaintiffAddress ;;
     #html:  <a href="https://idssda.looker.com/dashboards/85?gps_location='{{gps_location._value | encode_url }}'" target="_new">{{value}} ;;
-    html:  <a href="https://idssda.looker.com/dashboards/101?Plaintiff%20Address="{{PlaintiffAddress._value | encode_url }}"" target="_new">{{value}} ;;
+    html:  <a href="https://idssda.looker.com/dashboards/101?Plaintiff%20Address='{{PlaintiffAddress._value | encode_url }}' target="_new">{{value}} ;;
   #was DB 85
   }
 
