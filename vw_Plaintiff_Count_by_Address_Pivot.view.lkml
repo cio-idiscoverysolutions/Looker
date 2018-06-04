@@ -82,13 +82,13 @@ view: vw_plaintiff_count_by_address_pivot  {
   }
 
   dimension: PhysicalInjuryClaim{
-    label: "Physical Injury Claim"
+    label: "Physical Injury Claim?"
     type: string
     sql: ${TABLE}.PhysicalInjuryClaim;;
   }
 
   dimension: MentalOrEmotionalInjuryClaim{
-    label: "Mental or Emotional Injury Claim"
+    label: "Mental or Emotional Injury Claim?"
     type: string
     sql: ${TABLE}.MentalOrEmotionalInjuryClaim;;
   }
