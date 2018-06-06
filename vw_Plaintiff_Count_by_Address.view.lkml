@@ -147,7 +147,7 @@ view: vw_plaintiff_count_by_address {
     #;;
   }
   dimension: DistanceInMiles {
-    label: "Distance From Well Site"
+    label: "Distance from Well Site"
     type: number
     value_format: "0.00"
     sql: ${TABLE}.DistanceInMiles ;;
