@@ -7,7 +7,7 @@ view: vw_plaintiff_count_by_address_pivot  {
   }
   dimension: PlaintiffAddress {
     type: string
-    label:  "Plaintiff Address"
+    label:  "Address of Exposure"
     sql: ${TABLE}.PlaintiffAddress ;;
   }
   dimension: gps_lat {
@@ -142,11 +142,12 @@ view: vw_plaintiff_count_by_address_pivot  {
   }
 
   dimension: Zone {
+    label: "Zone of Exposure"
     type: string
     sql: ${TABLE}.Zone ;;
   }
   dimension: DistanceInMiles {
-    label: "Distance In Miles"
+    label: "Distance From Well Site"
     type: number
     value_format: "0.00"
     sql: ${TABLE}.DistanceInMiles ;;

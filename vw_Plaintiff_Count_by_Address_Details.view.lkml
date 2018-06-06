@@ -2,7 +2,7 @@ view: vw_plaintiff_count_by_address_details {
   sql_table_name: dbo.vw_plaintiff_count_by_address_details ;;
 
   dimension: PlaintiffAddress {
-    label:  "Plaintiff Address"
+    label:  "Address of Exposure"
     type: string
     sql: ${TABLE}.PlaintiffAddress ;;
   }

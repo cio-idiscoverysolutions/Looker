@@ -8,7 +8,7 @@ view: vw_plaintiff_count_by_address {
 
   dimension: PlaintiffAddress {
     type: string
-    label:  "Plaintiff Address"
+    label:  "Address of Exposure"
     sql: ${TABLE}.PlaintiffAddress ;;
     #html:  <a href="https://idssda.looker.com/dashboards/85?gps_location='{{gps_location._value | encode_url }}'" target="_new">{{value}} ;;
     html:  <a href="https://idssda.looker.com/dashboards/101?Plaintiff%20Address=%22{{PlaintiffAddress._value | encode_url }}%22" target="_new">{{value}} ;;
@@ -133,6 +133,7 @@ view: vw_plaintiff_count_by_address {
 
   dimension: Zone {
     type: string
+    label:  "Zone of Exposure"
     sql: ${TABLE}.Zone ;;
     #Use this to color code by zone
     #html:
@@ -146,7 +147,7 @@ view: vw_plaintiff_count_by_address {
     #;;
   }
   dimension: DistanceInMiles {
-    label: "Distance In Miles"
+    label: "Distance From Well Site"
     type: number
     value_format: "0.00"
     sql: ${TABLE}.DistanceInMiles ;;
