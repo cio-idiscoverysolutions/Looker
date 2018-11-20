@@ -4,7 +4,7 @@ connection: "litdev01-sql2016"
 include: "*.view"
 
 # include all the dashboards
-include: "*.dashboard"
+#include: "*.dashboard"
 
 explore: primary_audit {}
 

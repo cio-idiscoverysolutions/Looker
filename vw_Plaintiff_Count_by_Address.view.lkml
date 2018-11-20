@@ -47,6 +47,12 @@ view: vw_plaintiff_count_by_address {
     # suggest_persist_for: "1 minute"
   }
 
+  dimension: FirmOfRecord {
+    label: "Firm of Record"
+    type:  string
+    sql: ${TABLE}.FirmOfRecord ;;
+  }
+
   dimension: CitySuggestion {
     sql: ${TABLE}.vw_Plaintiff_City_Suggestions ;;
     suggest_dimension: CitySuggestion
@@ -174,4 +180,7 @@ view: vw_plaintiff_count_by_address {
     type: average
     value_format: "0.00"
   }
+
+
+
 }
