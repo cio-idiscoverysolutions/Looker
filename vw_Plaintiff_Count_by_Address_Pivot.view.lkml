@@ -166,4 +166,11 @@ view: vw_plaintiff_count_by_address_pivot  {
     drill_fields: [PlaintiffAddress,DistanceInMiles,PlaintiffNum,FullName,AcuteClaim,ChronicClaim,ChronicClaimDescription,MedicalMonitoringClaim,WrongfulDeathClaim,PropertyDamageClaim,PropertyValueClaim,RelocationClaim,LossofWagesClaim,PhysicalInjuryClaim,MentalOrEmotionalInjuryClaim,CurrentResidence,PreviousResidence,ExposureAddress,RelocationFromAddress,RelocationToAddress,DamagedAddress,SourceOfIncomeAddress,EmploymentAddress]
   }
 
+  measure: DistinctPlaintiffs{
+    label: "Count of Distinct Plaintiffs"
+    type:  count_distinct
+    sql: ${TABLE}.PlaintiffNum ;;
+  }
+
+
 }
